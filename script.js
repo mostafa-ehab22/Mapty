@@ -1,4 +1,6 @@
 'use strict';
+//*  MUST BIND 'this' => callback functions: undefined
+//*                   => Event Listeners: DOM Element attached
 
 // prettier-ignore
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -11,9 +13,45 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
-//*     MUST BIND 'this' => callback functions: undefined
-//*                      => Event Listeners: DOM Element attached
+class Workout {
+  date = new Date();
+  id = Date.now().toString(36) + Math.random().toString(36).slice(2);
 
+  constructor(coords, distance, duration) {
+    this.coords = coords; // @param {Array<number>} - Array of latitude & longitude [lat,lng]
+    this.distance = distance; // In km
+    this.duration = duration; // In min
+  }
+}
+
+class Running extends Workout {
+  constructor(coords, distance, duration, cadence) {
+    super(coords, distance, duration);
+    this.cadence = cadence;
+    this.calcPace();
+  }
+
+  calcPace() {
+    this.pace = this.duration / this.distance; // (min/km)
+    return this.pace;
+  }
+}
+
+class Cycling extends Workout {
+  constructor(coords, distance, duration, elevationGain) {
+    super(coords, distance, duration);
+    this.elevationGain = elevationGain;
+    this.calcSpeed();
+  }
+
+  calcSpeed() {
+    this.speed = this.distance / (this.duration / 60); // (km/hr)
+    return this.speed;
+  }
+}
+
+////////////////////////////////////////////////////////////////////
+// APPLICATION ARCHITECTURE
 class App {
   // Needed when getting user's location & submitting form
   #map;
