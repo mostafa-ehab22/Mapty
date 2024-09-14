@@ -1,6 +1,6 @@
 # Mapty 🗺️
 
-**Mapty** is a web-based application that allows users to track their running and cycling workouts by pinpointing locations on a map. The app uses the [Leaflet](https://leafletjs.com/) library for rendering maps and markers and leverages the **Geolocation API** to capture the user's current position. Workouts are stored in **local storage**, ensuring they persist between sessions.
+**Mapty** is a web-based application that allows users to track their running and cycling workouts by pinpointing locations on a map. The app uses the **Leaflet library** for rendering maps and markers and leverages the **Geolocation API** to capture the user's current position. Workouts are stored in **local storage**, ensuring they persist between sessions.
 
 ## Features 🌟
 
