@@ -4,10 +4,10 @@
 
 ## Features 🌟
 
-- **Geolocation API**: Automatically detect and display the user’s current location on the map.
 - **Leaflet Map Integration**: Display maps and allow users to mark workout locations.
-- **Running & Cycling Workouts**: Users can log their workouts (either running or cycling) with additional data like distance, time, and cadence.
+- **Geolocation API**: Automatically detect and display the user’s current location on the map.
 - **Local Storage**: Workouts are saved locally, and users can retrieve their data on their next login.
+- **Running & Cycling Workouts**: Users can log their workouts (either running or cycling) with additional data like distance, time, and cadence.
 - **Form-Based Input**: A workout form is displayed when a location is clicked on the map, where users can input workout data.
 - **Move to Marker**: Click on a workout in the workout list to move the map to the corresponding marker location.
 
