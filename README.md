@@ -64,6 +64,6 @@ live-server
 
 ## Acknowledgments 🙌
 
-- **Jonas Schmedtmann**: For the project inspiration.
+- **Jonas Schmedtmann**: Inspiration & teaching concepts required for the project in [The Complete Javascript Course](https://www.udemy.com/course/the-complete-javascript-course/)
 - **Leaflet Library**: [LeafletJS documentation](https://leafletjs.com/)
 - **Geolocation API**: [Geolocation API documentation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
