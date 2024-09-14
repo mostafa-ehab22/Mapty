@@ -64,8 +64,8 @@ live-server
 
 ## Acknowledgments 🙌
 
-- **Jonas Schmedtmann**: Inspiration & teaching concepts required for the project. 
-- **Leaflet Library**: [LeafletJS documentation](https://leafletjs.com/)
+- **Jonas Schmedtmann**: Inspiration and teaching the concepts used in this project.
+- **Leaflet Library**: Providing mapping capabilities essential for this project.
 
 ## License
 This project was created as a learning exercise and portfolio piece in [The Complete Javascript Course](https://www.udemy.com/course/the-complete-javascript-course/).
