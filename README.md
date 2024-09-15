@@ -15,7 +15,7 @@
 **Interactive Mapty Demo:** [Explore now](https://mostafa-ehab22.github.io/Mapty)
 
 ## Key Components 🔑
-- **OOP Architecture:** Efficiently manage workout data using object-oriented design with the App & Workout classes.
+- **OOP Architecture:** Manage workout data efficiently with the App & Workout classes.
 - **Geolocation API:** Used to get the user's current position.
 - **Leaflet.js:** To render maps and manage workout markers.
 - **Local Storage:** Saves workout data to be retrieved across sessions.
