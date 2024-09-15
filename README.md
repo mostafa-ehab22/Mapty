@@ -31,7 +31,7 @@ The map will center on your current location using the **Geolocation API**.
 ### Add a workout:
 - Click anywhere on the map to bring up the workout form.
 - Select either **Running** or **Cycling**.
-- Input the details such as distance, time and cadence (for running) or elevation gain (for cycling).
+- Input the details such as *distance*, *time* and *cadence (for running)* or *elevation gain (for cycling)*.
 
 ### View saved workouts:
 Your workouts will be listed on the side and can be clicked to center the map on the workout marker.
@@ -40,7 +40,7 @@ Your workouts will be listed on the side and can be clicked to center the map on
 Close the app and come back later—your workouts will still be there, thanks to **localStorage**!
 
 ## Key Components 🔑
-- **App & Workout Classes:** Object-oriented architecture to handle workout data efficiently.
+- **OOP Architecture:** Efficiently manage workout data using object-oriented design with the App & Workout classes.
 - **Geolocation API:** Used to get the user's current position.
 - **Leaflet.js:** To render maps and manage workout markers.
 - **Local Storage:** Saves workout data to be retrieved across sessions.
