@@ -12,7 +12,13 @@
 - **Move to Marker**: Click on a workout in the workout list to move the map to the corresponding marker location.
 
 ## Demo 📽️
-https://mostafa-ehab22.github.io/Mapty
+**Interactive Mapty Demo:** [Explore now](https://mostafa-ehab22.github.io/Mapty)
+
+## Key Components 🔑
+- **OOP Architecture:** Efficiently manage workout data using object-oriented design with the App & Workout classes.
+- **Geolocation API:** Used to get the user's current position.
+- **Leaflet.js:** To render maps and manage workout markers.
+- **Local Storage:** Saves workout data to be retrieved across sessions.
 
 ## Technologies Used 🛠️
 
@@ -38,12 +44,6 @@ Your workouts will be listed on the side and can be clicked to center the map on
 
 ### Data persistence:
 Close the app and come back later—your workouts will still be there, thanks to **localStorage**!
-
-## Key Components 🔑
-- **OOP Architecture:** Efficiently manage workout data using object-oriented design with the App & Workout classes.
-- **Geolocation API:** Used to get the user's current position.
-- **Leaflet.js:** To render maps and manage workout markers.
-- **Local Storage:** Saves workout data to be retrieved across sessions.
 
 ## Installation 📦
 
