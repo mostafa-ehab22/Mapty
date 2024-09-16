@@ -12,7 +12,7 @@
 - **Move to Marker**: Click on a workout in the workout list to move the map to the corresponding marker location.
 
 ## Demo 📽️
-**Interactive Mapty Demo:** [Explore now](https://mostafa-ehab22.github.io/Mapty)
+**Interactive Mapty Demo:** [Explore now](https://mostafa-ehab22.github.io/Mapty-Workout-Tracker/)
 
 ## Key Components 🔑
 - **OOP Architecture:** Manage workout data efficiently with the App & Workout classes.
