@@ -63,6 +63,11 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.close-modal');
+const errorText = document.querySelector('.error-text');
+const overlay = document.querySelector('.overlay');
+
 class App {
   // Needed when getting user's location & submitting form
   #map;
@@ -93,9 +98,7 @@ class App {
       // Successful, Failed
       navigator.geolocation.getCurrentPosition(
         this.#loadMap.bind(this), // loadMap: REGULAR FUNCTION CALL (callback) => 'this' equals undefined => Manually set 'this' keyword to object
-        function () {
-          alert('Failed to get your current location ⛔');
-        }
+        this.#renderErrorMessage
       );
     }
   }
@@ -323,6 +326,31 @@ class App {
   reset() {
     localStorage.removeItem('Workouts');
     location.reload();
+  }
+
+  #renderErrorMessage(errorMessage) {
+    //Function Showing Modal
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    errorText.insertAdjacentText(errorMessage);
+
+    //Function Closing Modal
+    // const closeModal = function () {
+    //   modal.classList.add('hidden');
+    //   overlay.classList.add('hidden');
+    // };
+
+    // // Closing
+    // btnCloseModal.addEventListener('click', closeModal);
+    // overlay.addEventListener('click', closeModal);
+
+    // //Closing when pressing ESC
+    // document.addEventListener('keydown', function (e) {
+    //   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    //     closeModal();
+    //   }
+    // });
   }
 }
 
