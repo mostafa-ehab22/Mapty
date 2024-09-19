@@ -1,6 +1,58 @@
 # Mapty 🗺️
 
 **Mapty** is a web-based application that allows users to track their running and cycling workouts by pinpointing locations on a map. The app uses the **Leaflet library** for rendering maps and markers and leverages the **Geolocation API** to capture the user's current position. Workouts are stored in **local storage**, ensuring they persist between sessions.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapty - Leaflet Map with GeoJSON</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mapty - Leaflet Map</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to the specified coordinates and zoom level
+        const map = L.map('map').setView([10.1, 125.6], 13); // [latitude, longitude]
+
+        // Add the tile layer from OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Define the corrected GeoJSON data (coordinates order: [longitude, latitude])
+        const geojsonData = {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [125.6, 10.1] // [longitude, latitude]
+                    },
+                    "properties": {
+                        "name": "Dinagat Islands"
+                    }
+                }
+            ]
+        };
+
+        // Add the GeoJSON layer to the map
+        L.geoJSON(geojsonData).addTo(map);
+    </script>
+
+</body>
+</html>
 
 ## Features 🌟
 
