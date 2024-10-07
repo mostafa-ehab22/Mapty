@@ -61,8 +61,3 @@ cd mapty
 ```
 live-server
 ```
-
-## Acknowledgments 🙌
-
-- **Jonas Schmedtmann**: Inspiration and teaching the concepts used in this project.
-- **Leaflet Library**: Providing mapping capabilities essential for this project.
